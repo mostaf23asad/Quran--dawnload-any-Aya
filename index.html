@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تحميل القرآن الكريم صوتيًا من آية إلى آية – mp3 بصوت أشهر القراء</title>
+<meta name="description" content="حمّل آيات القرآن الكريم mp3 من آية كذا إلى آية كذا في ملف واحد، بصوت العفاسي والحصري والمنشاوي والسديس وغيرهم. اختر السورة والآيات ونزّلها مجانًا.">
+<meta name="keywords" content="تحميل القرآن, تحميل آيات من القرآن, تحميل القرآن mp3, تحميل سورة من آية إلى آية, تحميل آيات متتالية, القرآن صوتي, تلاوة آية آية, مشاري العفاسي, الحصري, المنشاوي, السديس, تحميل مقطع من سورة">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="LZIbclFdfKnCkX8Zksuwv9srsRvWHj_cfUohxrWdo1M" />
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:title" content="تحميل القرآن الكريم صوتيًا من آية إلى آية">
+<meta property="og:description" content="اختر السورة والقارئ وحدد من آية إلى آية، ونزّل المقطع كله في ملف mp3 واحد مجانًا.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"تحميل آيات القرآن من آية إلى آية","description":"أداة مجانية لتحميل آيات القرآن الكريم صوتيًا في ملف mp3 واحد بتحديد آية البداية وآية النهاية.","applicationCategory":"MultimediaApplication","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+:root{--bg:#f6f3ea;--card:#fff;--tx:#1d2b24;--mu:#6b776f;--ac:#1f6f50;--bd:#ded8c6}
+@media(prefers-color-scheme:dark){:root{--bg:#14201a;--card:#1c2c24;--tx:#eef2ee;--mu:#9baba1;--ac:#3fb585;--bd:#2f4439}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+main{max-width:620px;margin:0 auto;padding:24px 16px}
+h1{font-size:1.4rem;margin:0 0 4px}
+p.s{color:var(--mu);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}
+label{display:block;font-size:.9rem;color:var(--mu);margin:12px 0 4px}
+select,input[type=number]{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+.row{display:flex;gap:12px}.row>div{flex:1}
+.chk{display:flex;gap:8px;align-items:center;margin-top:12px}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+button{padding:10px 16px;border-radius:10px;border:1px solid var(--ac);background:var(--card);color:var(--ac);font:inherit;cursor:pointer}
+button.p{background:var(--ac);color:#fff}
+button:disabled{opacity:.5}
+progress{width:100%;margin-top:14px;display:none}
+#st{margin-top:8px;color:var(--mu);font-size:.9rem;min-height:1.4em}
+audio{width:100%;margin-top:12px;display:none}
+#links{margin-top:12px;font-size:.85rem;direction:ltr;word-break:break-all}
+</style>
+</head>
+<body>
+<main>
+<h1>تحميل آيات من القرآن في ملف واحد</h1>
+<p class="s">اختر القارئ والسورة، وحدد "من آية" و"إلى آية"، ونزّلها مدمجة في ملف صوتي واحد.</p>
+<div class="card">
+  <label for="rc">القارئ</label><select id="rc"></select>
+  <label for="sr">السورة</label><select id="sr"></select>
+  <div class="row">
+    <div><label for="fr">من آية</label><input type="number" id="fr" min="1" value="1"></div>
+    <div><label for="to">إلى آية</label><input type="number" id="to" min="1" value="5"></div>
+  </div>
+  <div class="chk"><input type="checkbox" id="bs"><label for="bs" style="margin:0">إضافة البسملة في أول الملف</label></div>
+  <div class="btns">
+    <button class="p" id="dl">تحميل ملف واحد</button>
+    <button id="pv">استماع</button>
+    <button id="cp">نسخ روابط الآيات</button>
+  </div>
+  <progress id="pg" value="0" max="1"></progress>
+  <div id="st"></div>
+  <audio id="au" controls></audio>
+  <div id="links"></div>
+</div>
+<section style="margin-top:24px">
+  <h2 style="font-size:1.1rem">عن الموقع</h2>
+  <p>موقع مجاني لتحميل القرآن الكريم صوتيًا بطريقة مختلفة: تقدر تحمّل الآيات <strong>من آية كذا إلى آية كذا</strong> في ملف mp3 واحد، بدل ما تنزّل كل آية لوحدها. مثلًا تحمّل من الآية 1 إلى الآية 5 من سورة البقرة بضغطة واحدة.</p>
+  <p>مناسب لمن يريد حفظ مقطع من سورة، أو مراجعة آيات معينة، أو تشغيل جزء من القرآن في السيارة أو على الهاتف بدون إنترنت، أو إرسال تلاوة لآيات محددة لصديق.</p>
+  <h2 style="font-size:1.1rem">مميزات الموقع</h2>
+  <ul>
+    <li>تحميل آيات متتالية من أي سورة في ملف mp3 واحد</li>
+    <li>أكثر من 15 قارئًا: مشاري العفاسي، عبد الباسط، الحصري، المنشاوي، السديس، الشريم، المعيقلي وغيرهم</li>
+    <li>الاستماع للمقطع قبل التحميل</li>
+    <li>يعمل على الهاتف والكمبيوتر وبدون تسجيل</li>
+    <li>مجاني بالكامل</li>
+  </ul>
+  <h2 style="font-size:1.1rem">أسئلة شائعة</h2>
+  <p><strong>كيف أحمّل آيات من سورة معينة؟</strong><br>اختر القارئ والسورة، اكتب رقم آية البداية والنهاية، ثم اضغط "تحميل ملف واحد".</p>
+  <p><strong>هل يمكن تحميل آية واحدة فقط؟</strong><br>نعم، اكتب نفس الرقم في الخانتين.</p>
+  <p><strong>هل الموقع مجاني؟</strong><br>نعم، مجاني بدون تسجيل.</p>
+</section>
+</main>
+<script>
+const BASE="https://everyayah.com/data/";
+const R=[["Alafasy_128kbps","مشاري العفاسي"],["Abdul_Basit_Murattal_192kbps","عبد الباسط عبد الصمد (مرتل)"],["Husary_128kbps","محمود خليل الحصري"],["Minshawy_Murattal_128kbps","المنشاوي (مرتل)"],["Abdurrahmaan_As-Sudais_192kbps","عبد الرحمن السديس"],["Saood_ash-Shuraym_128kbps","سعود الشريم"],["Maher_AlMuaiqly_64kbps","ماهر المعيقلي"],["Abu_Bakr_Ash-Shatree_128kbps","أبو بكر الشاطري"],["Hudhaify_128kbps","علي الحذيفي"],["Ghamadi_40kbps","سعد الغامدي"],["Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net","أحمد العجمي"],["Yasser_Ad-Dussary_128kbps","ياسر الدوسري"],["Nasser_Alqatami_128kbps","ناصر القطامي"],["Muhammad_Ayyoub_128kbps","محمد أيوب"],["Hani_Rifai_192kbps","هاني الرفاعي"]];
+const N="الفاتحة،البقرة،آل عمران،النساء،المائدة،الأنعام،الأعراف،الأنفال،التوبة،يونس،هود،يوسف،الرعد،إبراهيم،الحجر،النحل،الإسراء،الكهف،مريم،طه،الأنبياء،الحج،المؤمنون،النور،الفرقان،الشعراء،النمل،القصص،العنكبوت،الروم،لقمان،السجدة،الأحزاب،سبأ،فاطر،يس،الصافات،ص،الزمر،غافر،فصلت،الشورى،الزخرف،الدخان،الجاثية،الأحقاف،محمد،الفتح،الحجرات،ق،الذاريات،الطور،النجم،القمر،الرحمن،الواقعة،الحديد،المجادلة،الحشر،الممتحنة،الصف،الجمعة،المنافقون،التغابن،الطلاق،التحريم،الملك،القلم،الحاقة،المعارج،نوح،الجن،المزمل،المدثر،القيامة،الإنسان،المرسلات،النبأ،النازعات،عبس،التكوير،الانفطار،المطففين،الانشقاق،البروج،الطارق،الأعلى،الغاشية،الفجر،البلد،الشمس،الليل،الضحى،الشرح،التين،العلق،القدر،البينة،الزلزلة،العاديات،القارعة،التكاثر،العصر،الهمزة،الفيل،قريش،الماعون،الكوثر،الكافرون،النصر،المسد،الإخلاص،الفلق،الناس".split("،");
+const C=[7,286,200,176,120,165,206,75,129,109,123,111,43,52,99,128,111,110,98,135,112,78,118,64,77,227,93,88,69,60,34,30,73,54,45,83,182,88,75,85,54,53,89,59,37,35,38,29,18,45,60,49,62,55,78,96,29,22,24,13,14,11,11,18,12,12,30,52,52,44,28,28,20,56,40,31,50,40,46,42,29,19,36,25,22,17,19,26,30,20,15,21,11,8,8,19,5,8,8,11,11,8,3,9,5,4,7,3,6,3,5,4,5,6];
+const $=i=>document.getElementById(i);
+const pad=(n,l)=>String(n).padStart(l,"0");
+R.forEach(([v,t])=>$("rc").add(new Option(t,v)));
+N.forEach((t,i)=>$("sr").add(new Option((i+1)+". "+t+" ("+C[i]+" آية)",i+1)));
+
+function clamp(){
+  const max=C[$("sr").value-1];
+  let a=Math.max(1,Math.min(max,+$("fr").value||1));
+  let b=Math.max(a,Math.min(max,+$("to").value||a));
+  $("fr").value=a;$("to").value=b;
+  $("fr").max=$("to").max=max;
+  return [a,b];
+}
+$("sr").onchange=()=>{$("fr").value=1;$("to").value=Math.min(5,C[$("sr").value-1]);clamp()};
+$("fr").onchange=$("to").onchange=clamp;
+
+function urls(){
+  const [a,b]=clamp(),s=+$("sr").value,f=BASE+$("rc").value+"/",u=[];
+  if($("bs").checked&&!(s===1)) u.push(f+"001001.mp3");
+  for(let i=a;i<=b;i++) u.push(f+pad(s,3)+pad(i,3)+".mp3");
+  return u;
+}
+const st=m=>$("st").textContent=m;
+
+$("dl").onclick=async()=>{
+  const u=urls(),pg=$("pg"),parts=[];
+  $("dl").disabled=true;pg.style.display="block";pg.max=u.length;pg.value=0;
+  try{
+    for(let i=0;i<u.length;i++){
+      st("جاري تحميل الآية "+(i+1)+" من "+u.length+"…");
+      const r=await fetch(u[i]);
+      if(!r.ok)throw new Error("HTTP "+r.status);
+      parts.push(await r.arrayBuffer());
+      pg.value=i+1;
+    }
+    const blob=new Blob(parts,{type:"audio/mpeg"});
+    const [a,b]=clamp();
+    const name=pad($("sr").value,3)+"_"+a+"-"+b+"_"+$("rc").value.split("_")[0]+".mp3";
+    const l=document.createElement("a");l.href=URL.createObjectURL(blob);l.download=name;l.click();
+    st("تم التحميل: "+name);
+  }catch(e){
+    st("تعذّر التحميل المباشر ("+e.message+"). استخدم زر \"نسخ روابط الآيات\" أو شغّل الصفحة من خادم/استضافة خاصة بك.");
+  }
+  $("dl").disabled=false;
+};
+
+$("pv").onclick=()=>{
+  const u=urls(),a=$("au");let i=0;
+  a.style.display="block";
+  const next=()=>{if(i<u.length){a.src=u[i++];a.play()}};
+  a.onended=next;next();
+};
+
+$("cp").onclick=async()=>{
+  const t=urls().join("\n");
+  $("links").textContent=t;
+  try{await navigator.clipboard.writeText(t);st("تم نسخ الروابط.")}catch(e){st("انسخ الروابط من الأسفل.")}
+};
+clamp();
+</script>
+</body>
+</html>
